@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #292929;
+    background-color: #fafafa;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
+}
+.content > * {
+    padding: 15px 5%;
+}
+.header * {
+    margin: 3% auto;
+}
+.darker {
+    /* background-color: #546373; */
+    background-color: #c3cdc3;
+    color: #fafafa;
+}
+a {
+    text-decoration: none;
+    color: #546373;
+}
+.skillsInterestsOther {
+    padding: 5px 0;
+}
+ul {
+    margin: 0;
+}
+li {
+    margin: 1%;
+}
+.skillsContainer li {
+    margin: 3%;
+}
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skillsContainer > * {
+    flex: 1;
+}
+.skillsContainer h2 {
+    width: fit-content;
+    margin: 0 auto;
+}
+.skills {
+    flex: 1.5;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 0.75rem;
+    }
+    .skillsInterestsOther {
+        padding: 0;
+    }
+    .skillsContainer {
+        flex-direction: column;
+        margin: 15px;
+        border: 2px solid #546373;
+    }
+    .skillsContainer h2 {
+        margin: 0;
+    }
+    li {
+        margin: 1.5%;
+    }
+    /* .skillsContainer li {
+        margin: 1.5%;
+    } */
+}
