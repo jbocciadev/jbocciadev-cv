@@ -18,8 +18,7 @@ body {
     margin: 3% auto;
 }
 .darker {
-    /* background-color: #546373; */
-    background-color: #c3cdc3;
+    background-color: #4d584d;
     color: #fafafa;
 }
 a {
@@ -81,7 +80,4 @@ li {
     li {
         margin: 1.5%;
     }
-    /* .skillsContainer li {
-        margin: 1.5%;
-    } */
 }
