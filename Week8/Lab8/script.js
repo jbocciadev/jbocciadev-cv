@@ -10,7 +10,6 @@ for (option of options) {
         let user = userChoice(event);
         let machine = machineChoice();
         let result = compare(user, machine);
-        console.log(result);
         updateBattlefield(user, machine, result);
     });
 }
