@@ -1,0 +1,23 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.darker {
+    background-color: #4d584d !important;
+    border-radius: 10px;
+}
+.email {
+    color: #4d584d;
+}
+
+@media screen and (max-width:768px) {
+    
+    .skillsContainer {
+    border: 2px solid #4d584d;
+    border-radius: 10px;
+    }
+    .skills{
+        border-radius: 0;
+    }
+    
+}
