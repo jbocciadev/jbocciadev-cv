@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+
+body {
+    background-color: #000;
+    color: #fff;
+    border: 5px solid red;
+    height: 100vh;
+}
+h1,
+h2 {
+    font-family: "Frijole", sans-serif !important;
+}
+H1 {
+    font-size: 62px;
+}
+.red-brd {
+    border: 2px solid red;
+}
+
+.option {
+    color: red;
+    font-size: x-large;
+}
+.option-img {
+    width: 40%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.user-options .option-img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px red;
+}
+.battlefield .selected {
+    width: 100%;
+}
+.battlefield p {
+    font-size: 2rem;
+}
+.battlefield img {
+    border: 5px dashed red;
+    box-shadow: 0 0 20px red;
+}
+
+.machine-option img {
+    transform: scaleX(-1);
+}
+#result-text {
+    /* font-size: 2rem !important; */
+}
