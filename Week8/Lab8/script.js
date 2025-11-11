@@ -17,7 +17,7 @@ for (option of options) {
 function machineChoice() {
     // return a random number between 1 and 3
     // https://www.w3schools.com/js/js_random.asp
-    let choice = Math.floor(Math.random() * 2) + 1;
+    let choice = Math.round(Math.random() * 2) + 1;
     return choice;
 }
 function userChoice(event) {
