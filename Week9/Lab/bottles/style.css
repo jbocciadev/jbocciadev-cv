@@ -1,18 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
 body {
-    background-color: bisque;
-    color: darkslategray;    
+    background-color: #fefcaf;
+    color: darkslategray;
+    font-family: "Macondo", cursive;
 }
 #buttonContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
 }
 #songContainer {
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    max-width: 100vw;
     text-align: center;
+}
+#songContainer p {
+    font-size: x-large;
+    margin: 0 0 1rem;
 }
