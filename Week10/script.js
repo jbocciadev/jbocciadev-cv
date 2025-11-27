@@ -2,21 +2,17 @@ let shoppingList = [];
 document.getElementById("add-btn").addEventListener("click", () => {
     console.log("clicked!");
     let newItem = prompt("What would you like to add to the list?");
-    console.log(newItem);
     shoppingList.push(newItem);
-    console.log(shoppingList);
-    displayList();
+    addToList(newItem);
 });
 
-function displayList() {
+function addToList(newItem) {
     let listDisplay = document.getElementById("list");
-    for ([index, value] of shoppingList.entries()) {
-        let listItm = document.createElement("li");
-        let itmBtn = document.createElement("button");
-        listItm.innerHTML = `${value}`;
-        itmBtn.id = index;
-        itmBtn.innerHTML = "-";
-        listItm.appendChild(itmBtn);
-        listDisplay.appendChild(listItm);
-    }
+    let listItm = document.createElement("li");
+    let itmBtn = document.createElement("button");
+    listItm.innerHTML = `${newItem}`;
+    // itmBtn.dataset.index = index;
+    itmBtn.innerHTML = "-";
+    listItm.appendChild(itmBtn);
+    listDisplay.appendChild(listItm);
 }
