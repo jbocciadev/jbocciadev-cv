@@ -22,7 +22,6 @@ li {
 li p {
     margin: 5px;
     margin-left: 15px;
-    /* justify-self: flex-start !important; */
 }
 li button {
     right: 5px;
@@ -30,11 +29,8 @@ li button {
     width: 10%;
     color: #fff;
     font-size: 30px;
-
-    /* justify-self: flex-end; */
 }
 li::before {
-    /* content: url(./icons/play-2-svgrepo-com.svg); */
     content: url(./icons/right-arrow-svgrepo-com.svg);
     transform: scale(0.04);
     display: block;
