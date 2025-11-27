@@ -1,4 +1,51 @@
 body {
     background-color: #d7c49e;
     color: #343148;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+ul {
+    padding: 10px;
+}
+li {
+    border: 2px solid #343148;
+    background-color: #ccc;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: disc;
+}
+li p {
+    margin: 5px;
+    margin-left: 15px;
+    /* justify-self: flex-start !important; */
+}
+li button {
+    right: 5px;
+    background-color: red;
+    width: 10%;
+    color: #fff;
+    font-size: 30px;
+
+    /* justify-self: flex-end; */
+}
+li::before {
+    /* content: url(./icons/play-2-svgrepo-com.svg); */
+    content: url(./icons/right-arrow-svgrepo-com.svg);
+    transform: scale(0.04);
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+#add-btn {
+    background-color: green;
+    color: #fff;
+    font-size: x-large;
+    border: 2px solid #343148;
+    border-radius: 5px;
+    text-align: center;
 }
