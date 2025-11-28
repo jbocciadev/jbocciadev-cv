@@ -14,13 +14,14 @@ document.getElementById("add-btn").addEventListener("click", () => {
 
 function displayList() {
     listDisplay.innerHTML = "";
+    // loop over the list items to add them to the ul
     for ([index, item] of shoppingList.entries()) {
         let listItm = document.createElement("li");
         let itmTxt = document.createElement("p");
         let itmBtn = document.createElement("button");
-        itmTxt.innerText = `${item}`;
+        itmTxt.innerText = item;
         itmBtn.dataset.index = index;
-        itmBtn.setAttribute("onclick", `removeFromList(event)`);
+        itmBtn.setAttribute("onclick", `removeFromList(event)`); // Add button to remove from list
         itmBtn.innerHTML = "-";
         listItm.appendChild(itmTxt);
         listItm.appendChild(itmBtn);
